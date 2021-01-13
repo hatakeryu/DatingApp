@@ -12,6 +12,9 @@
     <div class="row justify-content-center">
       <div class="col-4">
         <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+        <li *ngFor="let usuario of usuarios">
+          <ol value="usuario.pk">{{usuario.name}}</ol>
+        </li>
       </div>
     </div>
   </div>
